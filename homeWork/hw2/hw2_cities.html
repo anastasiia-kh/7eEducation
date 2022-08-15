@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw2_cities</title>
+    <style> 
+        .main{
+            width: max-content;
+            height: auto;
+            margin: 0 auto;
+        }
+        .box{
+            padding-bottom: 64px;
+        }
+        .img_city_full{
+            width: 1023px;
+        }
+        .img_city_part{
+            width: 766.99px;
+        }
+        .img_list{
+            width: 1453px;
+        }
+        .header{
+            width: 265px;
+            height: 25px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 0.25px;
+            top: 742px;
+        }
+        .footer{
+            width: 580px;
+            height: 25px;
+            font-size: 14px;
+            font-weight: 200;
+            top: 694px;
+        }
+        .header_center{
+            margin: 0 auto ;
+            margin-bottom: 16px;
+        }
+        .header_end{
+            width: 100%;
+            text-align: end;
+        }
+        .center_align{
+            text-align: center;
+            margin: auto;
+        }
+        .paragraf{
+            margin-bottom: 0;
+            margin-top: 32px;
+        }
+        .icon_img{
+            width: 12px;
+        }
+        .table{
+            font-size: 20px;
+            font-weight: 700;
+            color: #1B3364;
+     
+        }
+        .list{
+            color: grey;
+            margin-top: 10px;
+        }
+        .links{
+            color: gray;
+            text-decoration: none;
+            font-weight: 200;
+        }
+
+    </style>
+</head>
+<!--стилі винесені до head, використуіую class -->
+<body class="main"> <!--один клас щоб контент став  по середині-->
+    <div> <!--вирівнювання - ліво-->
+        <p class="header">Full width image with caption</p> 
+        <img class="img_city_full" src="./img/image 3 (1).png" alt="city" title="city 1">
+        <p class="footer">Carrot cake chupa chups gummi bears sweet fruitcake gummi bears sweet roll marzipan.</p>
+    </div>
+    <div> <!--вирівнювання - центр-->
+        <p class="header header_center">Full width image with caption</p>
+        <img class="img_city_full" src="./img/image 3 (1).png" alt="city" title="city 1">
+    </div>
+    <div> <!--хедер: вирівнювання - право, контент - центр-->
+        <p class="header header_end">Centered image with caption </p>
+        <div class="center_align"> <!-- окремий div для контент - центр-->
+            <img class="img_city_part" src="./img/image 3 (1).png" alt="city" title="city 1">
+            <p class="footer center_align">Carrot cake chupa chups gummi bears sweet fruitcake gummi bears sweet roll marzipan.</p> 
+        </div>
+    </div>
+    <div> <!--вирівнювання - центр-->
+        <div class="center_align">
+            <p class="header header_center paragraf">Centered image with caption </p>
+            <img class="img_city_part" src="./img/image 3 (1).png" alt="city" title="city 1">
+        </div>
+    </div>
+    <div class="box"> <!--вирівнювання - ліво + додатковый margin-->
+        <p class="header">Images with horizontal scroll</p>
+        <img src="./img/image 7.png" alt="">
+        <p class="footer">An example of a wide image that may require horizontal scroll depending on device width.
+        </p>
+    </div>
+    <div class="box"> <!--вирівнювання - ліво + додатковый margin-->
+        <p class="header">Screenshots</p>
+        <img src="./img/image 8.png" alt="screenshot" title="list">
+        <dl class="table"> <!--окрім зображення додала не нумерований  список-->
+            <dt>Site map</dt>
+            <dd class="list"> <!--кожен підпункт як лінка-->
+                <a class="links" href="#"> <!--додала svg для схожості з figma-->
+                    <img class="icon_img" src="./img/download.png" alt="settings" title="settings">
+                    Edit settings
+                </a>
+            </dd>
+            <dd class="list">
+                <a class="links" href="#">
+                    <img class="icon_img" src="./img/download (1).png" alt="edit" title="pencil">
+                    Turn editing on
+                </a>
+            </dd>
+            <dd class="list">
+                <a class="links" href="#">
+                    <img class="icon_img" src="./img/download (2).png" alt="filter" title="filter">
+                    Filters
+                </a>
+            </dd>
+            <dd class="list">
+                <a class="links" href="#">
+                    <img class="icon_img" src="./img/download.png" alt="settings" title="settings">
+                    Gradebook setup
+                </a>
+            </dd>
+            <dd class="list">
+                <a class="links" href="#">
+                    <img class="icon_img" src="./img/download (3).png" alt="outcomes" title="outcomes">
+                    Outcomes
+                </a>
+            </dd>
+            <dd class="list">
+                <a class="links" href="#">
+                    <img class="icon_img" src="./img/download (4).png" alt="backup" title="backup">
+                    Backup
+                </a>
+            </dd>
+        </dl>
+    </div>
+    <div class="center_align box"> <!--вирівнювання - центр-->
+        <p class="header header_center ">Circular images</p>
+        <img src="./img/image 3 (1) 2.png" alt="photo" title="photo">
+    </div>
+</body>
+</html>
