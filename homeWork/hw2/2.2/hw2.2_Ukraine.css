@@ -1,0 +1,194 @@
+body {
+    font-family: 'Inika', serif;
+    height: auto;
+}
+
+.h1 {
+    margin: 72px 0;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Inika', serif;
+}
+
+.line {
+    border-bottom: 5px solid #3E45E8;
+    width: 402px;
+    padding-top: 25px;
+}
+
+.header {
+    min-height: 50px;
+    max-height: 103px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-bottom: 31px;
+    letter-spacing: 15px;
+}
+
+.header_text_left {
+    color: #3E45E8;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.header_text_right {
+    color: #E8C23E;
+    font-family: 'Marcellus', serif;
+}
+
+.banner {
+    background-image: url(./img/image\ 1.png);
+    width: 100%;
+    height: 803px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 342px;
+    padding-left: 80px;
+}
+
+.content {
+    background-image: url(./img/flag\ \(1\).png);
+    box-sizing: border-box;
+    height: 40%;
+    background-repeat: no-repeat;
+    font-size: 48px;
+    font-family: 'Inika', serif;
+    color: white;
+    width: 22em;
+    padding-left: 46px;
+    line-height: 72px;
+}
+
+.content_text {
+    margin: 0;
+}
+
+.main {
+    padding: 0 80px;
+    margin-bottom: 0;
+}
+
+.card {
+    border: 0 transparent;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 3em;
+    box-shadow: 0px 4px 57px 3px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.card_margin {
+    margin: 0 4.5%;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.hand_icon {
+    position: absolute;
+    margin-left: 20px;
+
+}
+
+.card__title {
+    color: #1E8DF2;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px 0 25px 25px;
+    box-sizing: border-box;
+
+}
+
+.card__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #E8C23E;
+    padding: 0 0 53px 25px;
+    box-sizing: border-box;
+    width: 78%;
+    height: 100px;
+}
+
+.card__subtitle_tustan {
+    margin: 0;
+}
+
+.map {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.line_bottom {
+    margin-left: 15%;
+}
+
+.ukraine {
+    width: 812px;
+}
+
+.button {
+    margin-top: 41px;
+}
+
+.button_link {
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+    text-decoration: none;
+}
+
+.button_content {
+    width: 591px;
+    height: 121px;
+    background-color: #2A61F0;
+    text-align: center;
+    margin: 20% 0;
+}
+
+.button_content_main {
+    padding-top: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 320px;
+    background-color: #2F4A4B;
+
+}
+
+.footer_content {
+    text-align: center;
+    min-height: 50px;
+    max-height: 320px;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 10px;
+    font-weight: 400px;
+}
+
+.mail {
+    color: #A89D9D;
+    font-size: 36px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 5px;
+    margin: 21px 0;
+
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social_icon {
+    width: 64px;
+    height: 63px;
+    margin: 13px;
+    display: inline-block;
+    vertical-align: top;
+}
