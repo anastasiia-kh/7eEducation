@@ -1,57 +1,98 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <title>Home work 1.1: Text</title>
-    </head>
 
-    <body style="width: 500px; font-size: 12px;" >
-        <div> 
-            <h1 style="font-size: 24px;">HTML</h1>
-            <div>  <!--HTML визначення-->
-                <p style="size:12px"> <!--не використовувала pre, бо візуільно код виглядає паршиво (необхідно було б прибраьти табуляцію), вліпила кучу br-->
-                    HTML (HyperText Markup Language - "мова гіпертекстової розмітки") - найбільш базовий будівельний блок <a target="_blank" href="https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82">Інтернету</a>. Він визначає зміст та структуру <a target="_blank" href="https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B5_%D0%BD%D0%B0%D0%BF%D0%BE%D0%B2%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D1%81%D0%B0%D0%B9%D1%82%D1%83">веб-контенту</a>. Під гіпертекстом ("hypertext") розуміються посилання, які з'єднують веб-сторінки один з одним або в межах одного <a target="_blank" href="https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1%D1%81%D0%B0%D0%B9%D1%82">веб-сайту</a> або між веб-сайтами. Посилання є фундаментальним аспектом Інтернету.<br>
-                    <br>
-                    Інші технології, крім HTML, зазвичай використовуються для опису зовнішнього вигляду/уявлення (<a target="_blank" href="https://uk.wikipedia.org/wiki/CSS">CSS</a>) або функціональності/поведінки (<a target="_blank" href="https://uk.wikipedia.org/wiki/JavaScript">JavaScript</a>) веб-сторінки.<br>
-                    <br>
-                    <span style="font-weight: bold;">HTML-документ</span> - це звичайний текстовий документ, може бути створений як у звичайному текстовому редакторі (Блокнот) , так і в спеціалізованому з підсвічуванням коду (Notepad++, Visual Studio Code і т.п.) . HTML-документ має розширення .html.<br>
-                    <br>
-                    Завантажуючи контент в Інтернет і пов'язуючи його зі сторінками, створеними іншими людьми, ви стаєте активним учасником Всесвітньої мережі.  HTML використовує розмітку ("<a target="_blank" href="https://ru.wikipedia.org/wiki/HTML">markup</a>") для відображення тексту, зображень та іншого контенту у веб-браузері.<br>
-                    <br>
-                    <a target="_blank" href="markup">HTML-розмітка</a> включає в себе спеціальні "<a target="_blank" href="https://uk.wikipedia.org/wiki/%D0%95%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B8_HTML"></a>елементи", такі як <a target="_blank" href="https://css.in.ua/html/tags">теги</a> та <a target="_blank" href="https://uk.wikipedia.org/wiki/%D0%90%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B8_HTML">атрибути</a>.
-                </p>
-            </div>
-            <div> <!--Структура веб-сторінкии-->
-                <h3 style="font-size: 16px;">Структура веб-сторінки</h3>
-                <p style="font-weight: bold;">HTML-документ складається з двох розділів – заголовка – вміст елемента <span style="font-weight: normal; font-style: italic;">&lt;head&gt;</span> (технічна частина, видима лише розробнику) та змістовної частини – вміст <span style="font-weight: normal; font-style: italic;">&lt;body&gt;</span> (відображається на екрані користувача).</p>
-            </div>
-            <div> <!--Взаємозв`язки-->
-                <h2 style="font-style: italic; font-size: 16px;">Взаємозв’язки між вкладеними елементами поділяються на батьківські, дочірні та сестринські:
-                </h2>
-                <p>
-                    <span style="font-weight:bold">Предок</span> - <span style="font-style:italic;">елемент, який містить інші елементи. Предком для всіх елементів є &lt;html&gt; У той же час елемент &lt;body&gt; є предком для всіх елементів, що містяться в ньому: &lt;header&gt;, &lt;nav&gt;, &lt;h1&gt; і т.д.</span><br>
-                    <br>
-                    <span style="font-weight:bold">Нащадок</span> - <span style="font-style:italic;">елемент, розташований усередині одного або більше типів елементів. Наприклад, &lt;body&gt; є нащадком &lt;html&gt;, а елемент &lt;header&gt; є нащадком одночасно &lt;body&gt; і &lt;html&gt;.</span><br>
-                    <br>    
-                    <span style="font-weight:bold">Батьківський елемент</span> - <span style="font-style:italic;">елемент, пов'язаний з іншими елементами нижчого рівня і вище за них.</span><br>
-                    <br>
-                    <span style="font-weight:bold">Дочірній елемент</span> — <span style="font-style:italic;">елемент, що безпосередньо підпорядкований іншому елементу вищого рівня.</span><br>
-                    <br>
-                    <span style="font-weight:bold">Сестринський елемент</span> — <span style="font-style:italic;">елемент, що має спільний батьківський елемент із розглянутим, так звані елементи одного рівня, наприклад &lt;h1&gt;, &lt;div&gt; і &lt;ul&gt; або &lt;meta&gt;, &lt;link&gt; і &lt;title&gt;.</span>
-                </p>
-            </div>
-            <div> <!--Примітка-->
-                <h4 style="margin-bottom: 0; font-style: italic;">Примітка</h4>
-                <p style="width: 300px; font-size: 11px; margin-top: 0;">При виконанні цього Д/З використовуйте теги &lt;p&gt;, &lt;br&gt;, &lt;span&gt;, &lt;h1&gt;, &lt;h2&gt;...<br>
-                    Всі слова які виглядають як Інтернету мають бути посиланнями, <br> тобто вписані в тег &lt;a&gt; і прописано посилання на статтю у вікіпедії з відповідною інформацією.</p>
-            </div>
-            <div style="width: 300px; font-size: 11px; padding-left: 40%;"> <!--Таблиця-->
-                Аби скопіювати макет до себе, щоб мати змогу редагувати виконайте наступні дії:
-                <ul style="margin-top: 0;">
-                    <li>натисніть на стрілку біля назви роботи зверху</li>
-                    <li>оберіть пункт Duplicate</li>
-                    <li>після провантаження відкрийте у модалці знизу екрану, натисканням Open, копію макету.</li>
-                </ul>
-            </div>
+<head>
+    <title>Home work 1.1: Text</title>
+</head>
+
+<body style="width: 500px; font-size: 12px;">
+    <div>
+        <h1 style="font-size: 24px;">HTML</h1>
+        <div>
+            <!--HTML визначення-->
+            <p style="size:12px">
+                <!--не використовувала pre, бо візуільно код виглядає паршиво (необхідно було б прибраьти табуляцію), вліпила кучу br-->
+                HTML (HyperText Markup Language - "мова гіпертекстової розмітки") - найбільш базовий будівельний блок <a
+                    target="_blank"
+                    href="https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82">Інтернету</a>.
+                Він визначає зміст та структуру <a target="_blank"
+                    href="https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B5_%D0%BD%D0%B0%D0%BF%D0%BE%D0%B2%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D1%81%D0%B0%D0%B9%D1%82%D1%83">веб-контенту</a>.
+                Під гіпертекстом ("hypertext") розуміються посилання, які з'єднують веб-сторінки один з одним або в
+                межах одного <a target="_blank"
+                    href="https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1%D1%81%D0%B0%D0%B9%D1%82">веб-сайту</a> або
+                між веб-сайтами. Посилання є фундаментальним аспектом Інтернету.<br>
+                <br>
+                Інші технології, крім HTML, зазвичай використовуються для опису зовнішнього вигляду/уявлення (<a
+                    target="_blank" href="https://uk.wikipedia.org/wiki/CSS">CSS</a>) або функціональності/поведінки (<a
+                    target="_blank" href="https://uk.wikipedia.org/wiki/JavaScript">JavaScript</a>) веб-сторінки.<br>
+                <br>
+                <span style="font-weight: bold;">HTML-документ</span> - це звичайний текстовий документ, може бути
+                створений як у звичайному текстовому редакторі (Блокнот) , так і в спеціалізованому з підсвічуванням
+                коду (Notepad++, Visual Studio Code і т.п.) . HTML-документ має розширення .html.<br>
+                <br>
+                Завантажуючи контент в Інтернет і пов'язуючи його зі сторінками, створеними іншими людьми, ви стаєте
+                активним учасником Всесвітньої мережі. HTML використовує розмітку ("<a target="_blank"
+                    href="https://ru.wikipedia.org/wiki/HTML">markup</a>") для відображення тексту, зображень та іншого
+                контенту у веб-браузері.<br>
+                <br>
+                <a target="_blank" href="markup">HTML-розмітка</a> включає в себе спеціальні "<a target="_blank"
+                    href="https://uk.wikipedia.org/wiki/%D0%95%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B8_HTML"></a>елементи",
+                такі як <a target="_blank" href="https://css.in.ua/html/tags">теги</a> та <a target="_blank"
+                    href="https://uk.wikipedia.org/wiki/%D0%90%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B8_HTML">атрибути</a>.
+            </p>
         </div>
-    </body>
+        <div>
+            <!--Структура веб-сторінкии-->
+            <h3 style="font-size: 16px;">Структура веб-сторінки</h3>
+            <p style="font-weight: bold;">HTML-документ складається з двох розділів – заголовка – вміст елемента <span
+                    style="font-weight: normal; font-style: italic;">&lt;head&gt;</span> (технічна частина, видима лише
+                розробнику) та змістовної частини – вміст <span
+                    style="font-weight: normal; font-style: italic;">&lt;body&gt;</span> (відображається на екрані
+                користувача).</p>
+        </div>
+        <div>
+            <!--Взаємозв`язки-->
+            <h2 style="font-style: italic; font-size: 16px;">Взаємозв’язки між вкладеними елементами поділяються на
+                батьківські, дочірні та сестринські:
+            </h2>
+            <p>
+                <span style="font-weight:bold">Предок</span> - <span style="font-style:italic;">елемент, який містить
+                    інші елементи. Предком для всіх елементів є &lt;html&gt; У той же час елемент &lt;body&gt; є предком
+                    для всіх елементів, що містяться в ньому: &lt;header&gt;, &lt;nav&gt;, &lt;h1&gt; і т.д.</span><br>
+                <br>
+                <span style="font-weight:bold">Нащадок</span> - <span style="font-style:italic;">елемент, розташований
+                    усередині одного або більше типів елементів. Наприклад, &lt;body&gt; є нащадком &lt;html&gt;, а
+                    елемент &lt;header&gt; є нащадком одночасно &lt;body&gt; і &lt;html&gt;.</span><br>
+                <br>
+                <span style="font-weight:bold">Батьківський елемент</span> - <span style="font-style:italic;">елемент,
+                    пов'язаний з іншими елементами нижчого рівня і вище за них.</span><br>
+                <br>
+                <span style="font-weight:bold">Дочірній елемент</span> — <span style="font-style:italic;">елемент, що
+                    безпосередньо підпорядкований іншому елементу вищого рівня.</span><br>
+                <br>
+                <span style="font-weight:bold">Сестринський елемент</span> — <span style="font-style:italic;">елемент,
+                    що має спільний батьківський елемент із розглянутим, так звані елементи одного рівня, наприклад
+                    &lt;h1&gt;, &lt;div&gt; і &lt;ul&gt; або &lt;meta&gt;, &lt;link&gt; і &lt;title&gt;.</span>
+            </p>
+        </div>
+        <div>
+            <!--Примітка-->
+            <h4 style="margin-bottom: 0; font-style: italic;">Примітка</h4>
+            <p style="width: 300px; font-size: 11px; margin-top: 0;">При виконанні цього Д/З використовуйте теги
+                &lt;p&gt;, &lt;br&gt;, &lt;span&gt;, &lt;h1&gt;, &lt;h2&gt;...<br>
+                Всі слова які виглядають як Інтернету мають бути посиланнями, <br> тобто вписані в тег &lt;a&gt; і
+                прописано посилання на статтю у вікіпедії з відповідною інформацією.</p>
+        </div>
+        <div style="width: 300px; font-size: 11px; padding-left: 40%;">
+            <!--Таблиця-->
+            Аби скопіювати макет до себе, щоб мати змогу редагувати виконайте наступні дії:
+            <ul style="margin-top: 0;">
+                <li>натисніть на стрілку біля назви роботи зверху</li>
+                <li>оберіть пункт Duplicate</li>
+                <li>після провантаження відкрийте у модалці знизу екрану, натисканням Open, копію макету.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
 </html>
