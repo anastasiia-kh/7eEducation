@@ -1,0 +1,210 @@
+.page{
+    background-color: rgb(214, 209, 209);
+}
+.main{
+    width: max-content;
+    margin: 0 auto;
+}
+.box{
+    display: inline-block;
+    width: 512px;
+    height: 580px;
+    margin-right: 100px;
+}
+.cell{
+    height: 512px;
+    background-color: white;
+    position: relative;
+}
+.content{
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.text{
+    margin-bottom: 5px;
+    color: grey;
+}
+.background{
+    height: 256px;
+    margin: 0  auto;
+}
+.flag_top{
+    background-color: #2137FC;
+}
+.flag_bottom{
+    background-color: #F7D04E;
+}
+.flag_top_circle{
+    width: 450px;
+    height: 230px;
+}
+.flag_bottom_circle{
+    width: 450px;
+    height: 230px;
+}
+.position{
+    position: absolute;
+}
+.vawe{
+    background: url(./img/Glyph.png);
+    width: 400px;
+    height: 227.36px;
+    left: 52.61px;
+    top: 145px;
+}
+.vawe_circle{
+    background: url(./img/Glyph.png);
+    width: 400px;
+    height: 227.36px;
+    top: 250px;
+    left: 60px;
+}
+.radius_top{
+    border-radius: 1000px 1000px 0 0;
+}
+.radius_bottom{
+    border-radius: 0 0 1000px 1000px;
+  
+}
+.heptagon_black{
+    background: url(./img/Vector.png);
+    width: 341.58px;
+    height: 393px;
+    top: 59px;
+}
+.heptagon_white{
+    background: url(./img/Vector\ \(1\).png);
+    width: 271.79px;
+    height: 315.87px;
+    top: 99.4px;
+    left: 33.06px;
+}
+.heptagon_center{
+    background: url(./img/Vector\ \(2\).png);
+    width: 106.51px;
+    height: 88.15px;
+    top: 220.61px;
+    left: 55.09px;
+}
+.heptagon_black_circle{
+    background: url(./img/Vector\ \(3\).png);
+    width: 278.13px;
+    height: 320px;
+    top: 96px;
+    left: 117px;
+}
+.heptagon_white_circle{
+    background: url(./img/Vector\ \(4\).png);
+    width: 221.31px;
+    height: 257.2px;
+    top: 128.9px;
+    left: 143.92px;
+}
+.heptagon_center_circle{
+    background: url(./img/Vector\ \(5\).png);
+    width: 86.73px;
+    height: 71.78px;
+    top: 227.59px;
+    left: 161.86px;
+}
+.plane{
+    background: url(./img/Background.png);
+    width: 338.99px;
+    height: 385.93px;
+    top: 128px;
+    left: 173px;
+}
+.plane_left{
+    background: url(./img/Vector\ \(6\).png);
+    width: 163.25px;
+    height: 345.68px;
+    top: 131.85px;
+    left: 173px;
+}
+.plane_left_bottom{
+    background: url(./img/Vector\ \(7\).png);
+    width: 36.84px;
+    height: 384.92px;
+    top: 129.01px;
+    left: 305.66px;
+}
+.plane_right{
+    background: url(./img/Vector\ \(8\).png);
+    width: 36.83px;
+    height: 384.92px;
+    top: 129.01px;
+    left: 342.49px;
+}
+.plane_circle{
+    background: url(./img/Background\ \(1\).png);
+    width: 281.07px;
+    height: 286.63px;
+    top: 99.2px;
+    left: 115px;
+  }
+.plane_left_circle{
+    background: url(./img/Vector\ \(9\).png);
+    width: 135.36px;
+    height: 286.63px;
+    top: 102px;
+    left: 115px;
+}
+.plane_left_bottom_circle{
+    background: url(./img/Vector\ \(10\).png);
+    width: 30.54px;
+    height: 319.16px;
+    top: 96.84px;
+    left: 225px;
+}
+.plane_right_circle{
+    background: url(./img/Vector\ \(11\).png);
+    width: 30.54px;
+    height: 319.16px;
+    top: 96.84px;
+    left: 255.54px;
+}
+.diia{
+    background: url(./img/Vector\ \(12\).png);
+    width: 309.72px;
+    height: 181.88px;
+    top: 158.64px;
+    left: 93.58px;
+}
+.full_background{
+    width: 512px;
+    height: 512px;
+    background-color: black;
+}
+.flag_icon{
+    background: url(./img/Flag.png);
+    width: 80px;
+    height: 60px;
+}
+.flag_icon_left{
+    top: 23px;
+    left: 21px;
+}
+.flag_icon_right{
+    top: 27px;
+    left: 411px;
+}
+.diia_center{
+    background: url(./img/Vector\ \(12\).png);
+    width: 309.72px;
+    height: 181.88px;
+    position: absolute;
+    top: 128.64px;
+    left: 101px;
+}
+.flag_icon_center{
+    top: 343px;
+    left: 216px;
+}
+.footer{
+    width: 100%;
+}
+.footer_box{
+    align-items: center;
+    margin: 0 25%;
+}
