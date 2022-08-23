@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Забронювати будиночок</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body> <!--хедер: адекватно виглядає з 1300px-->
+    <div class="header"> <!--хедер-->
+        <a class="header-logo" href="#top"> <!--лінка вгору на лого-->
+            <img src="./img/logo.png" alt="logo">
+        </a>
+        <div class="header-btn"><!--кнопки робочі, ведуть до секцій + зміна кольору-->
+            <a href="#" class="header-btn_content"> ГОЛОВНА</a>
+            <a href="#contact" class="header-btn_content">ПРО НАС</a>
+            <a href="#book" class="header-btn_content">ЗАБРОНЮВАТИ</a>
+            <a href="#contact" class="header-btn_content">КОНТАКТИ</a>
+            <a href="#personal" class="header-btn_content">
+                <p class="header-btn_content-text">ОСОБИСТИЙ</p>
+                <p class="header-btn_content-text">КАБІНЕТ</p>
+            </a>
+            <div class="header-btn_content  header-btn_content-align">
+                <a class="header-btn_content__link" href="#">
+                    <svg class="planet_svg" width="61" height="61" viewBox="0 0 61 61" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="planet_svg-icon"
+                            d="M30.5 60.5C38.4565 60.5 46.0871 57.3393 51.7132 51.7132C57.3393 46.0871 60.5 38.4565 60.5 30.5C60.5 22.5435 57.3393 14.9129 51.7132 9.2868C46.0871 3.66071 38.4565 0.5 30.5 0.5C22.5435 0.5 14.9129 3.66071 9.2868 9.2868C3.66071 14.9129 0.5 22.5435 0.5 30.5C0.5 38.4565 3.66071 46.0871 9.2868 51.7132C14.9129 57.3393 22.5435 60.5 30.5 60.5V60.5ZM30.5 4.25C32.9638 4.25 35.7763 6.4625 38.0825 11.405C38.8963 13.1525 39.605 15.1625 40.1788 17.375H20.8213C21.395 15.1625 22.1038 13.1525 22.9213 11.405C25.22 6.4625 28.0325 4.25 30.5 4.25ZM19.52 9.81875C18.4127 12.2443 17.5545 14.776 16.9587 17.375H7.76C10.9259 11.9033 15.9546 7.75306 21.9275 5.6825C21.0238 6.92 20.2175 8.3225 19.52 9.81875ZM16.22 21.125C15.7347 24.2263 15.4939 27.361 15.5 30.5C15.5 33.7625 15.7512 36.92 16.2237 39.875H5.975C4.83135 36.8818 4.24667 33.7042 4.25 30.5C4.25 27.2 4.86125 24.035 5.975 21.125H16.2237H16.22ZM16.9587 43.625C17.6187 46.4112 18.485 48.9575 19.52 51.1813C20.2175 52.6775 21.0238 54.08 21.9275 55.3175C15.9546 53.2469 10.9259 49.0967 7.76 43.625H16.9625H16.9587ZM20.8213 43.625H40.1788C39.6622 45.6748 38.9592 47.6732 38.0787 49.595C35.78 54.5375 32.9675 56.75 30.5 56.75C28.0362 56.75 25.2238 54.5375 22.9175 49.595C22.0397 47.6729 21.3393 45.6746 20.825 43.625H20.8213ZM40.9775 39.875H20.0225C19.5014 36.7773 19.243 33.6412 19.25 30.5C19.25 27.1887 19.5237 24.0312 20.0225 21.125H40.9775C41.4762 24.0312 41.75 27.1887 41.75 30.5C41.75 33.8113 41.4762 36.9688 40.9775 39.875ZM44.0413 43.625H53.24C50.0741 49.0967 45.0454 53.2469 39.0725 55.3175C39.9763 54.08 40.7825 52.6775 41.48 51.1813C42.515 48.9575 43.3813 46.4112 44.0413 43.625V43.625ZM55.0288 39.875H44.7763C45.2488 36.92 45.5 33.7625 45.5 30.5C45.5 27.2375 45.2488 24.08 44.7763 21.125H55.025C56.1388 24.035 56.75 27.2 56.75 30.5C56.75 33.8 56.1388 36.965 55.025 39.875H55.0288ZM39.0725 5.6825C45.0456 7.75276 50.0744 11.903 53.24 17.375H44.0375C43.4417 14.7761 42.5835 12.2443 41.4763 9.81875C40.8085 8.36584 40.0023 6.98069 39.0687 5.6825H39.0725Z" />
+                    </svg>
+                    <p>UA</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <main class="container"> <!--основна сторінка-->
+        <a href="#top"> <!--кнопка  скроллу вверх-->
+            <div class="btn_scroll">
+                <div class="btn_scroll-top">
+                    <svg class="btn_scroll-top_arrow" width="25" height="45" viewBox="0 0 25 45" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.5 0.857162L0.952994 20.8572H24.047L12.5 0.857162ZM14.5 44.1429L14.5 18.8572H10.5L10.5 44.1429H14.5Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </a>
+        <section> <!--секція броні, на леуції була створина section,намагалась зробити все по секціям, це певно для  того, щоб можна було іх,забажанням, змінити місцями-->
+            <div class="row">
+                <div class="row-content">Забронювати будиночок
+                </div>
+            </div>
+            <div class="build" id="book">
+                <div class="build_collapse"> <!--тут поіинен бути колапс, але  ми його ще не робили-->
+                    <div class="collapse_content">Оберіть місцерозташування
+                    </div>
+                    <svg class="collapse_icon" width="30" height="25" viewBox="0 0 30 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 25L29.7224 0.25H0.277568L15 25Z" fill="black" />
+                    </svg>
+                </div>
+                <div class="build_card"> <!--картка 1: Бакота-->
+                    <div class="card_img">
+                        <img src="./img/bakota.png" alt="Незвідана Бакота">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__content-title">Незвідана Бакота</div>
+                        <div class="card__contentent-description"> У Хмельницькій області розташований загублений край -
+                            Бакота. Мальовничий каньйон з давньою історією захоплює своїми просторами та незвичною
+                            атмосферою. Бджільництво, свіжий мед із польових трав, дотик до природи.
+                        </div>
+                        <!--винесла колір svg в css щоб застосувати hover-->
+                        <svg class="card-star" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="card-star_style"
+                                d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z" />
+                        </svg>
+                        <a class="card-btn" href="#">Детальніше</a>
+                    </div>
+                </div>
+                <div class="build_card"> <!--картка 2: Карпати-->
+                    <div class="card_img">
+                        <img src="./img/polonunu.png" alt="Полонини Карпат ">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__content-title">Полонини Карпат</div>
+                        <div class="card__contentent-description">Полонини Карпат, у селі Орів посеред гір
+                            розташувався затишний куточок для незабутніх
+                            вражень. Справжні українські гори, власноручне
+                            сироваріння на полонині, водоспади та
+                            вікові дерева чекають на Вас.
+                        </div>
+                        <svg class="card-star" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="card-star_style"
+                                d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z" />
+                        </svg>
+                        <a class="card-btn" href="#">Детальніше</a>
+
+                    </div>
+                </div>
+                <div class="build_card"><!--картка 3: Київщина-->
+                    <div class="card_img">
+                        <img src="./img/kyivshina.png" alt="Автентична Київщина">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__content-title">Автентична Київщина
+                        </div>
+                        <div class="card__contentent-description"> Неподалік центра Києва розташувалось автентичне
+                            українське село на території однойменного села Пирогово. Дерев’яні млини, запашний хліб,
+                            приготовлений своїми руками, українські пісні та багато іншого чекає на вас уже зараз.
+                        </div>
+                        <svg class="card-star" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="card-star_style"
+                                d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z" />
+                        </svg>
+                        <a class="card-btn" href="#">Детальніше</a>
+
+                    </div>
+                </div>
+                <div class="build_card"> <!--картка 1: Одещина-->
+                    <div class="card_img">
+                        <img src="./img/odecshina.png" alt="Нетипова Одещина">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__content-title">Нетипова Одещина</div>
+                        <div class="card__contentent-description">В Одеській області знаходиться мальовниче містечко
+                            Вилкове.
+                            Його ще називають «українською Венецією». Вилкове - це містечко
+                            на воді, весь в каналах. Розташоване в місці, де зустрічаються річка
+                            Дунай і Чорне море. Люди пересуваються переважно човнами.
+                            Нетипове українське село не залишить Вас без вражень.
+                        </div>
+                        <svg class="card-star" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="card-star_style"
+                                d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z" />
+                        </svg>
+                        <a class="card-btn" href="#">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section><!--секція  персонал-->
+            <div class="build_title" id="personal">Особистий кабінет</div>
+            <div class="row">
+                <div class="row-content">Особистий кабінет</div>
+            </div>
+            <div class="personal">
+                <div class="personal_left">
+                    <div class="personal_left-content">
+                        <img src="./img/personal.png" alt="personal" class="personal_left-icon">
+                        <button class="personal_left-btn">Змінити аватар
+                        </button>
+                        <button class="personal_left-btn">Налаштування
+                        </button>
+                    </div>
+                </div>
+                <div class="personal_right"> <!-- телефон  і  пошта - лінки-->
+                    <p class="personal_right-content">Петров Іван Іванович</p>
+                    <p class="personal_right-content">Стать: <span>чоловіча</span></p>
+                    <p class="personal_right-content">Дата народження: <span>10. 02. 1998</span></p>
+                    <p class="personal_right-content">Мобільний телефон: <span> <a
+                                href="tel:+38(097)346-72-50">+38(097)346-72-50</a></span></p>
+                    <p class="personal_right-content">Ел. пошта: <span> <a
+                                href="mailto:petrov@gmail.com">petrov@gmail.com</a></span></p>
+                </div>
+            </div>
+            <button class="section-btn">Вийти</button><!--hover стилі-->
+        </section>
+        <section><!--секція  контакти-->
+            <div class="build_title" id="contact">Контакти</div>
+            <div class="row">
+                <div class="row-content">Контакти</div>
+            </div>
+            <div class="contacts"> <!--розбивала на два блоки,  тут явно можно зробили таблицею, але не знаю як-->
+                <div class="contacts_box contacts_box-top contacts_box-space"> <!--перший блок - верх: три секції-->
+                    <div class="contacts_box-content">
+                        <p class="contacts_box-content_header">Телефон
+                        </p>
+                        <p class="contacts_box-content_footer"> <a href="tel:+38(097)119-89-83">+38(097)119-89-83</a>
+                        </p>
+                    </div>
+                    <div class="contacts_box-content">
+                        <p class="contacts_box-content_header">Графік роботи
+                        </p>
+                        <p class="contacts_box-content_footer box-content_footer">пн-пт 08:00-22:00
+                        </p>
+                        <p class="contacts_box-content_footer box-content_footer">сб 09:00-21:00
+                        </p>
+                        <p class="contacts_box-content_footer box-content_footer">нд 10:00-20:00
+                        </p>
+                    </div>
+                    <div class="contacts_box-content">
+                        <p class="contacts_box-content_header">Ел. пошта
+                        </p>
+                        <p class="contacts_box-content_footer">
+                            <a href="mailto:hello@gmail.com">hello@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="contacts_box contacts_box-bottom"> <!--другий блок - низ: дві секції включаючи мапу-->
+                    <div class="contacts_box-content">
+                        <p class="contacts_box-content_header">Адреса офісу</p>
+                        <p class="contacts_box-content_footer">
+                            <a target="_blank"
+                                href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9A%D0%B0%D0%B7%D0%B8%D0%BC%D0%B8%D1%80%D0%B0+%D0%9C%D0%B0%D0%BB%D0%B5%D0%B2%D0%B8%D1%87%D0%B0,+4,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4278234,30.5090141,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf1e4f6914e5:0xbcdcd80ffeaf9ae3!8m2!3d50.4278234!4d30.5112028?hl=ru">м.
+                                Київ, вул. Малевича, буд. 4</a>
+                        </p>
+                    </div>
+                    <div>
+                        <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.712747532639!2d30.50901411606725!3d50.42782337947227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1e4f6914e5%3A0xbcdcd80ffeaf9ae3!2z0LLRg9C70LjRhtGPINCa0LDQt9C40LzQuNGA0LAg0JzQsNC70LXQstC40YfQsCwgNCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1661172724011!5m2!1sru!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"> <!-- футер-->
+        <p class="footer_content">© 2021 HolidayTime. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
