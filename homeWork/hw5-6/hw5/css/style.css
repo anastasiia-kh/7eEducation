@@ -222,7 +222,7 @@ a {
 }
 
 .technology_box_header {
-    width: 80%;
+    width: 89%;
     font-size: 5.4rem;
     margin: 0;
     line-height: 5rem;
@@ -717,6 +717,7 @@ dd::before {
         font-size: 3.4rem;
         line-height: 3.5rem;
         margin-bottom: 5rem;
+        width: 30rem;
     }
 
     .technology_box_content {
