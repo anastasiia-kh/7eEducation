@@ -345,9 +345,12 @@ a {
 
 .quote_box-right__content {
     position: absolute;
-    bottom: 18rem;
+    bottom: 8rem;
     left: 7rem;
     padding-left: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .quote_box-right__content-box {
@@ -355,36 +358,33 @@ a {
     width: 55rem;
     font-weight: 900;
     font-size: 3.6rem;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 
 /* зображення перед текстом */
-.quote_box-right__content::before {
+.quote_box-right__content-box::before {
     content: "";
     background-image: url('../img/“1.png');
     width: 40px;
     height: 35px;
     position: absolute;
-    top: -7%;
     left: 0;
+    top: -9%;
 }
 
 /* зображення після тексту */
-.quote_box-right__content::after {
+.quote_box-right__content-box::after {
     content: "";
     background-image: url('../img/“2.png');
     width: 40px;
     height: 35px;
     position: absolute;
-    bottom: 7%;
-    right: 0%;
+    right: 0;
+    bottom: 20%;
 }
 
 .quote_box-right__content_text {
     font-size: 2.4rem;
-    position: absolute;
-    bottom: 12.5rem;
-    left: 12rem;
 }
 
 /* price section */
@@ -762,8 +762,6 @@ dd::before {
     }
 
     .quote_box-right__content {
-        position: absolute;
-        padding-left: 15%;
         left: 0;
         bottom: 25%;
     }
@@ -774,20 +772,20 @@ dd::before {
     }
 
     /* зображення перед текст блоком */
-    .quote_box-right__content::before {
+    .quote_box-right__content-box::before {
         width: 20px;
         height: 19px;
         background-size: 20px;
-        left: 18%;
+        left: 5%;
     }
 
     /* зображення пісдя текст блока */
-    .quote_box-right__content::after {
+    .quote_box-right__content-box::after {
         width: 20px;
         height: 19px;
         background-size: 20px;
         right: 0;
-        bottom: 5%;
+   
     }
 
     .quote_box-right__content_text {
