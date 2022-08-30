@@ -1,0 +1,878 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+
+html {
+    /* зменшила розмір шрифту всього контенту */
+    font-size: 8px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+section {
+    height: max-content;
+
+}
+
+/* кольорові  крапки */
+span {
+    color: #F6AD09;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.box {
+    min-width: 800px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    display: flex;
+}
+
+.container_header {
+    padding-top: 2%;
+    font-size: 6.4rem;
+    margin-left: 22rem;
+    display: flex;
+    align-items: center;
+}
+
+/* основні відступи секцій */
+.container_box {
+    display: flex;
+    padding: 0 20.2rem;
+    height: 80%;
+    background-color: black;
+}
+
+.container_box-left {
+    width: 50%;
+    overflow: hidden;
+}
+
+/* header */
+.header {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.8rem;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    min-width: 800px;
+    max-width: 1400px;
+    margin-top: 2rem;
+}
+
+.header_box {
+    background-color: rgba(0, 0, 0, 0.126);
+}
+
+.header_logo {
+    font-size: 3.6rem;
+    font-weight: 500;
+    width: 80%;
+}
+
+.header_btn {
+    display: flex;
+    font-weight: 500;
+    width: 30%;
+    margin-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* зміна кольору на hover */
+.header_link:hover {
+    color: #F6AD09;
+    text-shadow: 5px 5px 25px rgba(244, 231, 116, 0.576);
+}
+
+/* top content section */
+.info {
+    color: white;
+}
+
+.info_box {
+    padding-top: 6%;
+}
+
+.info_box-left_content {
+    margin-top: 30%;
+    margin-right: 10%;
+}
+
+.info_box-left_content-header {
+    font-size: 5.4rem;
+    font-weight: 600;
+    line-height: 7.2rem;
+    margin: 0;
+}
+
+.info_box-left_content-text {
+    margin: 3.2rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+
+.info_box-left_content-btn {
+    width: 22rem;
+    height: 6rem;
+    background-color: #F6AD09;
+    border-radius: 5px;
+    border: none;
+}
+
+.info_box-left_content-btn:hover {
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-shadow: 1px 5px 25px rgba(244, 231, 116, 0.25);
+    background-color: #f9c13f;
+}
+
+.info_box-right {
+    width: 50%;
+}
+
+.info_box-right_img {
+    width: 100%;
+}
+
+/* items section */
+.items-box {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 2% 0 5% 0;
+}
+
+.items-box__card {
+    width: 30%;
+    color: black;
+    overflow: hidden;
+}
+
+.items-box__card:hover>img {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-header {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.card-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* technology section*/
+.technology {
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.technology_box {
+    padding: 13.5% 0;
+    position: relative;
+}
+
+.technology_box-style {
+    height: 80%;
+}
+
+.technology_box-left {
+    padding-top: 5rem;
+    padding-right: 5rem;
+}
+
+.technology_box-left_style {
+    width: 86%;
+}
+
+.technology_box_title {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #B2B2B2;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+}
+
+.technology_box_header {
+    width: 80%;
+    font-size: 5.4rem;
+    margin: 0;
+    line-height: 5rem;
+    font-weight: 500;
+}
+
+.technology_box_content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #B2B2B2;
+    line-height: 3rem;
+    margin: 4rem 0;
+}
+
+.technology_box_row {
+    color: #FFBB00;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+    border-bottom: 4px solid #FFBB00;
+    width: fit-content;
+}
+
+.technology_box-tbl {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10%;
+}
+
+.tbl_column-header {
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+/* елемент перед текстом */
+.tbl_column-header::before {
+    content: "";
+    background-image: url(../img/Rectangle.png);
+    width: 22px;
+    height: 10px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 1rem;
+}
+
+.tbl_column-text {
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    color: #B2B2B2;
+    width: 80%;
+}
+
+/* розташовання боксу з картинкою над блоком */
+.technology_box-right {
+    width: 45%;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    flex-shrink: 7;
+    display: flex;
+    align-items: center;
+    /* height наклацала в дев тул */
+    height: -webkit-fill-available;
+}
+
+.technology_box-right-img {
+    width: 100%;
+}
+
+/* partners section*/
+.partners_box-header {
+    margin-bottom: 2%;
+}
+
+.partners_tbl {
+    margin: 0 5%;
+}
+
+.partners_tbl-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.partners_tbl-row__bottom {
+    display: flex;
+}
+
+.partners_box>.partners_tbl>.partners_tbl-row>img {
+    width: 24%;
+    overflow: hidden;
+}
+
+/* quote section */
+.quote_box {
+    display: flex;
+    margin-top: 10rem
+}
+
+.quote_box-left {
+    width: 50%;
+    background-color: #161616;
+}
+
+.quote_box_left-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.quote_box-right {
+    width: 50%;
+    background-color: #FFBB00;
+    position: relative;
+    overflow: hidden;
+}
+
+.quote_box-right__content {
+    position: absolute;
+    bottom: 18rem;
+    left: 7rem;
+    padding-left: 5rem;
+}
+
+.quote_box-right__content-box {
+    font-family: 'Merriweather', serif;
+    width: 55rem;
+    font-weight: 900;
+    font-size: 3.6rem;
+    margin-bottom: 5%;
+}
+
+/* зображення перед текстом */
+.quote_box-right__content::before {
+    content: "";
+    background-image: url('../img/“1.png');
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    top: -7%;
+    left: 0;
+}
+
+/* зображення після тексту */
+.quote_box-right__content::after {
+    content: "";
+    background-image: url('../img/“2.png');
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    bottom: 7%;
+    right: 0%;
+}
+
+.quote_box-right__content_text {
+    font-size: 2.4rem;
+    position: absolute;
+    bottom: 12.5rem;
+    left: 12rem;
+}
+
+/* price section */
+.price {
+    background-color: #161616;
+    height: 800px;
+    margin-bottom: 0;
+}
+
+.price_header {
+    height: 20%;
+}
+
+.price_box {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7.3rem;
+    height: 70%;
+}
+
+.price_box-main {
+    background-color: black;
+    width: 45%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.price_box-main__content {
+    width: 70%;
+    position: relative;
+    margin-left: 10rem;
+    flex-shrink: 2;
+}
+
+.price_box-main__content-header {
+    color: #9C9C9C;
+    font-size: 3.6rem;
+}
+
+.price_box-main__content-tbl {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: absolute;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-tbl_row {
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+}
+
+/* маркери попереду списків */
+dd::before {
+    content: "";
+    background-image: url(../img/Rectangle.png);
+    width: 15px;
+    height: 5px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 1rem;
+}
+
+.price_box-main__content-btn {
+    width: 177px;
+    height: 53px;
+    font-weight: 600;
+    background-color: #2E2E2E;
+    font-size: 1.8rem;
+    color: #CCCCCC;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 5rem;
+    line-height: 2.4rem;
+    cursor: pointer;
+}
+
+.price_box-main__info {
+    width: 35%;
+    position: relative;
+    margin-right: 2%;
+    flex-shrink: 1;
+}
+
+.price_box-main__info-style {
+    position: absolute;
+}
+
+.price_box-main__info-top {
+    font-weight: 600;
+    font-size: 3.6rem;
+    margin-bottom: 0;
+}
+
+.price_box-main__info-bottom {
+    font-size: 1.2rem;
+    color: #9C9C9C;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+}
+
+/* тінь на боксах іхміна величини на hover */
+.price_box-main:hover {
+    height: 456px;
+    margin-top: -5rem;
+    transition-duration: 0.5s;
+    box-shadow: rgba(43, 43, 43, 0.56) 0px 22px 70px 4px;
+}
+
+/* зміна кольору хедера на hover */
+.price_box-main:hover>.price_box-main__content>.price_box-main__content-header {
+    color: #FFBB00;
+    transition-duration: 0.5s;
+}
+
+/* зміна відступів у списку на hover */
+.price_box-main:hover>.price_box-main__content>.price_box-main__content-tbl>.content-tbl_row {
+    margin: 1.5rem 0;
+    transition-duration: 0.5s;
+}
+
+/* footer */
+.footer {
+    height: 474px;
+    background-color: black;
+    color: white;
+}
+
+.footer_header {
+    height: 80%;
+}
+
+.footer_content {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    font-size: 2.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer_content-logo>a {
+    font-size: 3.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer_content-contact,
+.footer_content-info {
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.footer_content-contact {
+    width: 25%;
+}
+
+.footer_content-contact_logo,
+.footer_content-info_logo {
+    margin-bottom: 5rem;
+}
+
+.footer_content-contact_info {
+    display: flex;
+    flex-direction: column;
+    text-transform: none;
+}
+
+.footer_content-contact_info>a {
+    color: #B2B2B2;
+    font-size: 1.8rem;
+}
+
+.footer_content-contact_info-email {
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.footer_content-contact_info-map {
+    line-height: 3rem;
+}
+
+/* соціальні іконки */
+.footer_content-contact_social {
+    margin-top: 2rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* зміна кольору тексту на hover */
+.footer_content-contact_info-tel:hover,
+.footer_content-contact_info-email:hover,
+.footer_content-contact_info-map:hover,
+.footer_content-info_tbl-row:hover {
+    color: #FFBB00;
+    cursor: pointer;
+}
+
+/* тінь при наведені на іконки(я художник, я так бачу :)), хотілось спробувати) */
+.footer_content-contact_social-link:hover {
+    box-shadow: rgba(248, 187, 4, 0.663) 0px 5px, rgba(240, 195, 46, 0.3) 0px 10px, rgba(237, 240, 46, 0.2) 0px 15px;
+}
+
+.footer_content-info_tbl-row {
+    display: flex;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #B2B2B2;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.footer_reserv {
+    font-size: 1.8rem;
+    color: #9C9C9C;
+    position: absolute;
+    bottom: 5rem;
+}
+
+
+/* я лише коли зверстала згадала що ширина екрану має бути від 800px, 
+нічого кращого не вигадала ніж підключити медіа запит, 
+не знаю вірно чи ні, і чи в цьому полягяло завдання, 
+але перевірила -> від 800 px верстка гумова */
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .header_btn {
+        width: 50%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .container_box {
+        padding: 0 10%;
+    }
+
+    .container_header {
+        margin: 0 0 5% 10%;
+        font-size: 4.5rem;
+    }
+
+    .header {
+        font-size: 1.4rem;
+    }
+
+    .info_box {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 70px;
+    }
+
+    .info_box-left_content {
+        margin-top: 30%;
+        width: 80%;
+    }
+
+    .info_box-left_content-header {
+        font-size: 4rem;
+        line-height: 5.5rem;
+    }
+
+    .info_box-left_content-text {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
+
+    .info_box-left_content-btn {
+        width: 18rem;
+        height: 40px;
+    }
+
+    .info_box-right {
+        width: 50%;
+
+    }
+
+    .info_box-right_img {
+        width: 100%;
+    }
+
+    .items-box {
+        justify-content: space-between;
+    }
+
+    .card-header {
+        font-size: 2rem;
+    }
+
+    .card-content {
+        font-size: 1.5rem;
+    }
+
+    .technology {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .technology_box {
+        padding: 9.5% 0;
+        margin: 2% 0;
+        overflow: hidden;
+    }
+
+    .technology_box_title {
+        font-size: 1.5rem;
+    }
+
+    .technology_box_header {
+        font-size: 4rem;
+        line-height: 3.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .technology_box_content {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .technology_box_row {
+        font-size: 2rem;
+    }
+
+    .tbl_column-header {
+        font-size: 1.7rem;
+    }
+
+    .tbl_column-header::before {
+        width: 18px;
+        height: 5px;
+    }
+
+    .tbl_column-text {
+        font-size: 1rem;
+    }
+
+    .technology_box-left {
+        padding-bottom: 2rem;
+    }
+
+    .technology_box-right {
+        position: absolute;
+    }
+
+    .partners_tbl {
+        margin: 5%;
+    }
+
+    .quote_box {
+        margin: 0;
+    }
+
+    .quote_box-right__content {
+        position: absolute;
+        padding-left: 15%;
+        left: 0;
+        bottom: 25%;
+    }
+
+    .quote_box-right__content-box {
+        font-size: 1.6rem;
+        width: 25rem;
+    }
+
+    /* зображення перед текст блоком */
+    .quote_box-right__content::before {
+        width: 20px;
+        height: 19px;
+        background-size: 20px;
+        left: 18%;
+    }
+
+    /* зображення пісдя текст блока */
+    .quote_box-right__content::after {
+        width: 20px;
+        height: 19px;
+        background-size: 20px;
+        right: 0;
+        bottom: 5%;
+    }
+
+    .quote_box-right__content_text {
+        font-size: 1.4rem;
+        left: 15%;
+        bottom: 17%;
+    }
+
+    .price {
+        height: 700px;
+    }
+
+    .price_box-main:hover {
+        width: 50%;
+        height: 90%;
+        z-index: 1;
+    }
+
+    .price_box-main:hover>.price_box-main__content {
+        width: 70%;
+        margin-left: 8%;
+    }
+
+    .price_box-main:hover>.price_box-main__content>.price_box-main__content-header {
+        font-size: 4rem;
+    }
+
+    .price_box-main:hover>.price_box-main__content>.price_box-main__content-tbl>.content-tbl_row {
+        font-size: 2rem;
+        margin: 0.8rem 0;
+    }
+
+    .price_box-main:hover>.price_box-main__info>.price_box-main__info-top {
+        font-size: 2.3rem;
+        position: absolute;
+        top: 5%;
+    }
+
+    .price_box-main:hover>.price_box-main__info>.price_box-main__info-style {
+        top: 3%;
+    }
+
+    .price_box-main__content {
+        margin-left: 5%;
+    }
+
+    .price_box-main__content-header {
+        font-size: 3rem;
+    }
+
+    .price_box-main__content-tbl {
+        font-size: 1.5rem;
+        height: fit-content;
+        top: 25%;
+    }
+
+    .content-tbl_row {
+        margin: 0.2rem 0;
+        font-weight: 100;
+    }
+
+    .price_box-main__info-top {
+        font-size: 3rem;
+    }
+
+    .price_box-main__content-btn {
+        width: 130px;
+        height: 35px;
+        position: absolute;
+        bottom: 15%;
+    }
+
+    dd::before {
+        width: 10px;
+        height: 3px;
+    }
+
+    .footer_content-logo {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer_content-contact_social {
+        width: 80%;
+    }
+
+    .footer_content {
+        width: 80%;
+    }
+
+    .footer_content-contact_info>a,
+    .footer_content-info_tbl>a {
+        font-size: 1.4rem !important;
+    }
+
+}
