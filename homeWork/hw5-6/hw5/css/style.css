@@ -851,7 +851,7 @@ dd::before {
     }
 
     .price_box-main:hover>.price_box-main__content>.price_box-main__content-tbl>.content-tbl_row {
-        font-size: 2rem;
+        font-size: 1.4rem;
         margin: 0.8rem 0;
     }
 
