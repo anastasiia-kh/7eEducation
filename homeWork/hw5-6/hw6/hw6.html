@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,131 @@
     <title>Modal</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <main>
-
+        <!--modal-->
         <div class="modal">
+            <!--ліва частина модалки-->
             <div class="modal_left">
-                <div class="modal_left-title">Kreativ</div>
-                <div class="modal_left-box-contetnt">
-                    <p class="modal_left-box-contetnt_title">Let’s get you started</p>
+
+                <!--svg on the left side-->
+                <svg width="447" height="503" viewBox="0 0 447 503" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.05"
+                        d="M-256 452.639C-204.562 432.452 -179.002 398.17 -179.32 349.793C-179.796 277.227 -151.631 236.067 -101.268 241.435C-50.9053 246.803 -15.7287 305.732 -17.0637 368.391C-18.3988 431.05 50.8259 445.345 81.1775 438.388C111.529 431.431 132.91 410.181 137.824 383.686C148.692 325.092 69.6486 262.498 84.0404 209.271C98.4322 156.044 176.675 149.729 211.856 206.398C213.589 209.19 215.397 211.849 217.272 214.38C254.972 265.26 319.947 264.031 355.539 237.82C417.259 192.367 408.13 130.17 338.156 76.4007C233.45 -7.33009 185.759 -86.9421 195.081 -162.435"
+                        stroke="url(#paint0_linear_201_13)" stroke-width="100" stroke-linecap="round" />
+                    <defs>
+                        <linearGradient id="paint0_linear_201_13" x1="-256" y1="452.639" x2="374.653" y2="-186.852"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#4E7577" />
+                            <stop offset="1" stop-color="#65D5FC" />
+                            <stop offset="1" stop-color="#23445B" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+                <!--header лівої частини модалки-->
+                <div class="modal_left-header">
+                    <a href="#" class="modal_left-header_logo">Kreativ</a>
+                    <!--скриті кнопки-->
+                    <div class="modal_left-header_btn">
+                        <a href="#">Home</a>
+                        <a class="modal_left-header_btn-contact" href="#">Contact</a>
+                    </div>
+                </div>
+
+                <!--форма-->
+                <form class="modal_left-box">
+                    <p class="modal_left-box_title">Let’s get you started</p>
+                    <!--робила через p, так зручніше було-->
+                    <!--поле Full name-->
                     <p>
                         <label for="username">Full name</label>
-                        <input type="text" id="username" placeholder="Ade Tiger">
+                        <input type="text" id="username" placeholder="Ade Tiger" required>
                     </p>
+                    <!--поле Email addres-->
                     <p>
                         <label for="email">Email addres</label>
-                        <input type="text" id="email" placeholder="yourname@email.com">
+                        <input type="email" id="email" placeholder="yourname@email.com" required>
                     </p>
-                    <p>
-                        <label for="phone">Email addres</label>
-                        <input type="text" id="phone" placeholder="+234 800 2738 9700">
-                    </p>
+                    <!--поле Phone number-->
                     <p>
                         <label for="phone">Phone number</label>
-                        <input type="text" id="phone" placeholder="+234 800 2738 9700">
+                        <input type="number" id="phone" placeholder="+234 800 2738 9700" required>
                     </p>
-                </div>
-                <div class="modal_left-footer"></div>
-            </div>
-            <div class="modal_right"></div>
-        
-        </div>
+                    <!--поле Password-->
+                    <p>
+                        <label for="password">Create password</label>
+                        <input type="password" id="password"
+                            placeholder="&#9900 &#9900 &#9900 &#9900 &#9900 &#9900 &#9900 &#9900" required>
+                    <div class="password_text">
+                        <p>Password must contain a minimum of 8 characters</p>
+                        <p>Password must contain at least one symbol e.g. @, !</p>
+                    </div>
+                    </p>
+                    <!--dropdown-->
+                    <label for="city">Location <span>(optional)</span></label>
+                    <input type="text" id="city" list="location" placeholder="Slect location">
+                    <datalist id="location">
+                        <option disabled selected id="sel">Select Location</option>
+                        <option value="Kyiv">Kyiv</option>
+                        <option value="Lviv">Lviv</option>
+                        <option value="Dnipro">Dnipro</option>
+                        <option value="Kharkiv">Kharkiv</option>
+                        <option value="Ternopil">Ternopil</option>
+                        <option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
+                        <option value="Zaporizhzhia">Zaporizhzhia</option>
+                        <option value="Vinnytsia">Vinnytsia</option>
+                        <option value="Odesa">Odesa</option>
+                        <option value="Rivne">Rivne</option>
+                        <option value="Khmelnytskyi">Khmelnytskyi</option>
+                        <option value="Lutsk">Lutsk</option>
+                        <option value="Cherkasy">Cherkasy</option>
+                        <option value="Poltava">Poltava</option>
+                        <option value="Chernivtsi">Chernivtsi</option>
+                        <option value="Zhytomyr">Zhytomyr</option>
+                        <option value="Chernihiv">Chernihiv</option>
+                        <option value="Kropyvnytskyi">Kropyvnytskyi</option>
+                        <option value="Sumy">Sumy</option>
+                        <option value="Mykolaiv">Mykolaiv</option>
+                        <option value="Uzhhorod">Uzhhorod</option>
+                        <option value="Kherson">Kherson</option>
+                        <option value="Donetsk">Donetsk</option>
+                        <option value="Luhansk">Luhansk</option>
+                        <option value="Crimea">Crimea</option>
+                    </datalist>
 
+                    <!--submit button-->
+                    <button class="modal_left-box_submit-btn" type="submit">Sign Up</button>
+                    <div class="modal_left-box_footer">
+                        <p>Already a user?</p>
+                        <a href="">Login</a>
+                    </div>
+                </form>
+            </div>
+
+            <!--права частина модалки-->
+            <div class="modal_right">
+                <div class="modal_right-style">
+                    <!--header-->
+                    <header class="modal_right-header">
+                        <div class="modal_right-header_btn">
+                            <a href="">Home</a>
+                            <a href="">Contact</a>
+                        </div>
+                    </header>
+                    <!--content-->
+                    <div class="modal_right-content">
+                        <div class="modal_right-content_box">
+                            <p class="modal_right-content_box-top">“Creativity is intelligence having fun”</p>
+                            <p class="modal_right-content_box-bottom">- Albert Einstein</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </main>
-    
 </body>
+
 </html>
