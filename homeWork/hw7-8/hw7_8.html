@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberShop</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="header">
+            <!--під лого видніється полоса хедера, при різних розмірах екрану-->
+            <a class="header_logo" href="#">
+                <img src="./img/klipartz.png" alt="logo">
+            </a>
+            <!--on hover changing styles, each row is a link-->
+            <div class="header_btn">
+                <div class="header_btn-container">
+                    <a href="#">Appointment</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#service">Services</a>
+                    <a href="#team">Team</a>
+                    <a href="#">Reviews</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--Gallery page-->
+        <section id="gallery">
+            <div class="box gallery">
+                <!--2sec animation from left-->
+                <div class="gallery-left">
+                    <img class="gallery-left__img" src="./img/Rectangle_1.png" alt="boy">
+                </div>
+                <div class="gallery-center">
+                    <!--1sec animation from left-->
+                    <div class="gallery-center_left">
+                        <img src="./img/Rectangle_2.png" alt="man">
+                        <img src="./img/Rectangle_4.png" alt="haircut">
+                    </div>
+                    <!--1sec animation from right-->
+                    <div class="gallery-center_right">
+                        <img src="./img/Rectangle_3.png" alt="styling">
+                        <img src="./img/Rectangle_5.png" alt="beardcut">
+                    </div>
+                </div>
+                <!--2sec animation from right-->
+                <div class="gallery-right">
+                    <img class="gallery-left__img" src="./img/Rectangle_6.png" alt="barberboy">
+                </div>
+            </div>
+        </section>
+
+        <!--Services page-->
+        <section id="service">
+            <div class="box services">
+                <!--8sec animation це быльше ніж в ТЗ, але на 5сек нудить =)
+                перевірила кросс-браузерність (додала  окремо  анімації  @-webkit-keyframes & @keyframes
+                але safari то є біль, працює через раз, хоча -webkit-animation для неї)-->
+                <div class="services-left">
+                    <div class="services-left__container services-left_top-left">
+                        <img src="./img/Ellipse1.png" alt="">
+                        <p>Hair Styling</p>
+                    </div>
+                    <div class="services-left__container services-left_top-right">
+                        <img src="./img/Ellipse2.png" alt="">
+                        <p>Beard Trimming</p>
+                    </div>
+                    <div class="services-left__container services-left_bottom-left">
+                        <img src="./img/Ellipse3.png" alt="">
+                        <p>Smooth Shave</p>
+                    </div>
+                    <div class="services-left__container services-left_bottom-right">
+                        <img src="./img/Ellipse4.png" alt="">
+                        <p>Hair Straightening</p>
+                    </div>
+                </div>
+                <div class="services-right">
+                    <img src="./img/pexels-cottonbro.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--Team page-->
+        <section id="team">
+            <div class="box team">
+                <p class="team_title">Meet Our Highly Skilled Experts</p>
+                <!--Питання: якщо наводити не на картинку, а на нижню частину, воно блінкує, як цього позбутися?-->
+                <div class="team_cart">
+                    <!--Meredith-->
+                    <div class="team_cart-style">
+                        <img src="./img/Rectangle8.png" alt="">
+                        <div class="team_cart-style_meredith">
+                            <p>Meredith</p>
+                        </div>
+                    </div>
+                    <!--Jason-->
+                    <div class="team_cart-style">
+                        <img class="team_cart-jason" src="./img/Rectangle9.png" alt="">
+                        <div>
+                            <p>Jason</p>
+                        </div>
+                    </div>
+                    <!--Ryan-->
+                    <div class="team_cart-style">
+                        <img class="team_cart-ryan" src="./img/Rectangle10.png" alt="">
+                        <div>
+                            <p>Ryan</p>
+                        </div>
+                    </div>
+                    <!--James-->
+                    <div class="team_cart-style">
+                        <img class="team_cart-james" src="./img/Rectangle11.png" alt="">
+                        <div>
+                            <p>James</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Contact page-->
+        <section id="contact">
+            <div class="box contact">
+                <!--form + map-->
+                    <!--form-->
+                    <div class="contact_top-left">
+                        <div class="contact_top-left_title">Get in touch with Us and send a Message </div>
+                        <div class="contact_top-left_content">
+                            <form class="contact_top-left_left__content-form">
+                                <div class="content-form_top">
+                                    <input class="content-form_input" type="text" id="name" placeholder="Name">
+                                    <input class="content-form_input" type="email" id="email" placeholder="Email">
+                                </div>
+                                <div class="content-form_input-message">
+                                    <input type="textarea" id="text"
+                                    placeholder="Message">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--map-->
+                    <div class="contact_top-right">
+                        <div class="contact_top-right_map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12103.359057142612!2d-73.9600282!3d40.6774994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x523ad4960a13597d!2s836%20Bergen!5e0!3m2!1sru!2sua!4v1662301583246!5m2!1sru!2sua"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                <!--contacts-->
+                <div class="contact_bottom">
+                    <!--on hover changing styles, each row is a link-->
+                    <div class="contact_bottom-contact">
+                        <a class="contact_bottom-contact_email" href="mailto:kumarpratiyush1405@gmail.com"><span>Email :
+                            </span>kumarpratiyush1405@gmail.com</a>
+                        <a class="contact_bottom-contact_phone" href="tel:+(972)723429834"> <span>Phone : </span>+(972)
+                            723429834</a>
+                        <a class="contact_bottom-contact_addres"
+                            href="https://www.google.com/maps/place/836+Bergen/@40.6774994,-73.9600282,15z/data=!4m5!3m4!1s0x0:0x523ad4960a13597d!8m2!3d40.6774994!4d-73.9600282">
+                            <span>Headquarters : </span>836th Avenue, 3rd Floor, New York,</a>
+                        <p class="contact_bottom-contact_city">New York</p>
+                    </div>
+
+                    <div class="contact_bottom-hours">
+                        <p class="contact_bottom-hours_title">Opening Hours</p>
+                        <div class="contact_bottom-hours_content">
+                            <p>Monday - Friday : 10:00 am - 05:00 pm</p>
+                            <p>Saturday : 10:00 am - 02:00 pm</p>
+                        </div>
+                    </div>
+
+                    <div class="contact_bottom-social">
+                        <div class="contact_bottom-social_title">Connect With Us </div>
+                        <!--on hover changing styles, each row is a link
+                        намагалась зробити по прикладу sprite-->
+                        <div class="contact_bottom-social_media">
+                            <a class="contact_bottom-social_media-icons instagram"
+                                href="https://www.instagram.com/dapperbully/">Instagram</a>
+                            <a class="contact_bottom-social_media-icons facebook"
+                                href="https://www.facebook.com/dapperbully">Facebook</a>
+                            <a class="contact_bottom-social_media-icons twitter"
+                                href="https://twitter.com/dapperbully">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
