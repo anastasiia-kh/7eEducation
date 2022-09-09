@@ -38,7 +38,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 section {
-    padding: 9% 0 0 0;
+    padding: 3% 0 0 0;
 }
 
 section:last-child{
@@ -76,7 +76,7 @@ header {
 }
 
 .header_btn {
-    width: 85%;
+    width: var(--percentage);
     right: 0;
     display: flex;
     justify-content: end;
@@ -92,8 +92,9 @@ header {
     justify-content: space-around;
 }
 
-.header_btn>.header_btn-container>a {
+.header_btn>.header_btn-container > a {
     color: #FFFCFC;
+    font-weight: 100;
 }
 
 .header_btn-container>a:hover {
