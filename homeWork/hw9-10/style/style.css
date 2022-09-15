@@ -28,11 +28,6 @@ main {
     margin: 0 auto;
 }
 
-/* .container {
-    margin: 0 auto;
-    width: auto;
-} */
-
 .container_content {
     display: grid;
     grid-template-columns: 0.34fr 0.24fr 0.24fr;
